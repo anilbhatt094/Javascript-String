@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <title>JavaScript String</title>
+    <body>
+        <script>
+            //Litreals String
+
+            var str1 = "Hello";
+            var str2= "Hello Again";
+            document.writeln(str1 + "<br> " + str2);
+            document.writeln("<br>");
+
+            //Create using new keyword
+            var str3 = new String("I am Fine");
+            document.writeln(str3);
+            document.writeln("<br>");
+
+            //CharAt() - Position check character
+            var constr = "Hello";
+            var charstr1 = "How are you how";
+            document.writeln(charstr1.charAt(8));
+            document.writeln("<br>");
+
+            //CharCodeAt() - Uniqe code value
+            document.writeln(charstr1.charCodeAt(5));
+            document.writeln("<br>");
+            //Concat()- add to string 
+            document.writeln(constr.concat(charstr1));
+            document.writeln("<br>");
+
+            //Indexof() - Show of index charcter aplhabet
+            document.writeln(charstr1.indexOf('o'));
+            document.writeln("<br>");
+
+            //LastiIndexof() - Last index show of character
+            document.write(charstr1.lastIndexOf("o"));
+            document.writeln("<br>");
+
+            //Search() - search of charcter position 
+            document.writeln(charstr1.search('you'));
+            document.writeln("<br>");
+            document.writeln(charstr1.search(/how/i));
+            document.writeln("<br>");
+
+            //match() - Same charcter show
+            document.writeln(charstr1.match(/HOW/i));
+            document.writeln("<br>");
+            document.writeln(charstr1.match('how'));
+            document.writeln("<br>");
+
+            //replace() - replace character (globla - g & i - replace case senstive) 
+            document.writeln(charstr1.replace(/how/gi , 'I'));
+            document.writeln("<br>")
+
+            //Substr() - starting to ending position charcter length
+            document.writeln(charstr1.substr(4 , 13));
+            document.writeln("<br>");
+
+            //Substring() - starting to ending position charcter end position
+            document.writeln(charstr1.substring());
+            document.writeln("<br>");
+            document.writeln(charstr1.substring(5 , 8));
+            document.writeln("<br>");
+
+            //Slice() - charcter slice wise divide
+            document.writeln(charstr1.slice(3 , 8));
+            document.writeln("<br>");
+
+            //toLowerCase() -  Capital letter to conver small letter
+            var lowerstr = "THIS IS LOWER CASE";
+            var lowerstrtr = "test lower case";
+            var tostring = 1;
+            document.writeln( lowerstr.toLowerCase());
+            document.write("<br>");
+
+            //tolocalelowercase()- use system local language
+            document.writeln(lowerstrtr.toLocaleLowerCase());
+            document.write("<br>");
+
+            //toUperCase() -  small letter to conver upper letter
+            document.write(lowerstrtr.toUpperCase());
+            document.write("<br>");
+
+            //toString() 
+            document.writeln(tostring.toString());
+            document.write("<br>");
+
+            //valueof() - 
+            document.writeln(lowerstr.valueOf());
+            document.write("<br>"); 
+
+            //Split use of seprateby
+            document.writeln(lowerstr.split(" "));
+            document.write("<br>");
+
+            //Trim() space remove starting to ending
+            document.writeln(lowerstrtr.trim());
+
+
+
+
+
+
+        </script>
+    </body>
+</html>
